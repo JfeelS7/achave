@@ -347,10 +347,19 @@
   <script src="https://sdk.mercadopago.com/js/v2"></script>
   <script>
     // Abrir modal ao clicar nos botões
+    let checkoutType = '';
     document.querySelectorAll('button').forEach(btn => {
-      if (btn.textContent.includes('Garanta sua Chave') || btn.textContent.includes('Garantir Chave Mestra')) {
+      if (btn.textContent.includes('Garanta sua Chave')) {
         btn.addEventListener('click', function(e) {
           e.preventDefault();
+          checkoutType = 'essencial';
+          document.getElementById('modal-form').classList.remove('hidden');
+        });
+      }
+      if (btn.textContent.includes('Garantir Chave Mestra')) {
+        btn.addEventListener('click', function(e) {
+          e.preventDefault();
+          checkoutType = 'mestra';
           document.getElementById('modal-form').classList.remove('hidden');
         });
       }
@@ -374,21 +383,23 @@
         email: form.email.value,
         telefone: form.celular.value
       };
-      
-    const publicKey = "APP_USR-c5ff41dc-a2ee-44a2-a506-f7c925c3090f";
-      
-    const res = await fetch('/api/v1/checkout', {
+      let endpoint = '/api/v1/checkoutessencial';
+      if (checkoutType === 'mestra') {
+        endpoint = '/api/v1/checkoutmestra';
+      }
+      const res = await fetch(endpoint, {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify(data)
       });
-
-      console.log(res);
-
-      const preferenceId = res.id;
-
       const json = await res.json();
-      window.location.href = json.init_point;
+      if (json.init_point) {
+        window.location.href = json.init_point;
+      } else if (json.error) {
+        alert(json.error);
+      } else {
+        alert('Erro ao processar pagamento. Tente novamente.');
+      }
     });
   </script>
 

@@ -3,7 +3,8 @@ import { mercadopagoController } from '../controllers/mercadopagoController';
 
 const router = Router();
 
-router.post('/checkout', mercadopagoController.criarPagamento);
+router.post('/checkoutessencial', mercadopagoController.criarPagamentoEssencial);
+router.post('/checkoutmestra', mercadopagoController.criarPagamentoMestra);
 router.post('/webhook', mercadopagoController.webhookMP);
 
 export { router as mercadoPagoRouter };
