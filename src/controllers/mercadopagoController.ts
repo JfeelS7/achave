@@ -2,7 +2,7 @@ import { Request, Response } from 'express';
 import { MercadoPagoConfig, Preference, Payment } from 'mercadopago';
 import { prisma } from '../lib/prisma';
 import { v4 as uuidv4 } from 'uuid';
-//import { enviarEmail } from '../services/emailService';
+//import { enviarEmail } from '../services/emailService'
 
     const configMercadoPago = new MercadoPagoConfig({ accessToken: process.env.MP_ACCESS_TOKEN || '' });
     const preferencia = new Preference(configMercadoPago);
