@@ -12,5 +12,24 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
+  app:
+    build: .
+    container_name: achaveimersao_app
+    depends_on:
+      - postgres
+    environment:
+      DATABASE_URL: "postgres://postgres:joaquim1993@@postgres:5432/achave?schema=public"
+      PORT: 3000
+      MP_ACCESS_TOKEN: "APP_USR-4006479418366589-092517-0779019975988a7457dca3758204a1c0-2708427636"
+      SMTP_HOST: smtp.seuprovedor.com
+      SMTP_PORT: 587
+      SMTP_USER: usuario@provedor.com
+      SMTP_PASS: sua_senha
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+    command: ["node", "dist/index.js"]
+
 volumes:
   postgres_data:
