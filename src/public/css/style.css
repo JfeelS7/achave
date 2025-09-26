@@ -1,0 +1,7 @@
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); } /* Adjust based on content duplication */
+    }
+    .animate-scroll {
+      animation: scroll 30s linear infinite; /* Adjust duration as needed */
+    }

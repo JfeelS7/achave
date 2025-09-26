@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Chave - Imersão</title>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-black text-white font-sans">
+
+  <!-- Header -->
+  <header class="bg-black/80 backdrop-blur-sm border-b border-white/10 fixed w-full top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold tracking-wider">A CHAVE</h1>
+      <div id="countdown" class="hidden md:flex gap-6 text-sm items-center">
+        <div class="flex flex-col items-center">
+          <span id="days" class="text-3xl font-bold">00</span>
+          <span class="text-xs">Dias</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <span id="hours" class="text-3xl font-bold">00</span>
+          <span class="text-xs">Horas</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <span id="minutes" class="text-3xl font-bold">00</span>
+          <span class="text-xs">Min</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <span id="seconds" class="text-3xl font-bold">00</span>
+          <span class="text-xs">Seg</span>
+        </div>
+      </div>
+              <a href="#investimento" class="bg-white text-black font-semibold px-5 py-2 rounded-xl shadow-xl hover:bg-gray-200 hover:scale-105 transition-all duration-300 tracking-wide">
+        Inscreva-se ✨
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative min-h-screen flex items-center justify-center text-center bg-black py-20 pb-0">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center h-full">
+      <!-- Left Column: Text Content -->
+      <div class="text-left">
+        <h2 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
+          Uma imersão para o mercado imobiliário.
+        </h2>
+        <p class="text-lg md:text-xl text-white/80 mb-8">
+          Construa autoridade, posicione sua marca e transforme presença em ativo milionário ⚡️
+        </p>
+        <a href="#investimento" class="bg-white text-black font-bold px-8 py-4 rounded-xl shadow-2xl hover:bg-gray-300 transform hover:scale-105 transition-all duration-300 tracking-wider">
+          QUERO GARANTIR MINHA VAGA ➔
+        </a>
+      </div>
+      <!-- Right Column: Image -->
+      <div class="flex justify-center items-center h-full">
+        <img src="images/4.jpg" alt="Evento A Chave" class="max-h-full w-full object-contain rounded-lg shadow-2xl">
+      </div>
+    </div>
+  </section>
+
+  <!-- O que você vai aprender -->
+  <section class="bg-white/5 py-20 text-center">
+    <div class="max-w-6xl mx-auto px-6">
+      <h3 class="text-4xl font-bold mb-12">O que você vai aprender na imersão?</h3>
+      <div class="grid md:grid-cols-4 gap-8">
+        <div class="bg-white/10 p-8 rounded-xl shadow-lg hover:bg-white/20 hover:-translate-y-2 transition-all duration-300">
+          <h4 class="text-xl font-semibold mb-2">Reposicionamento</h4>
+          <p class="text-sm text-white/70">Como diferenciar sua marca no mercado imobiliário.</p>
+        </div>
+        <div class="bg-white/10 p-8 rounded-xl shadow-lg hover:bg-white/20 hover:-translate-y-2 transition-all duration-300">
+          <h4 class="text-xl font-semibold mb-2">Precificação</h4>
+          <p class="text-sm text-white/70">Aprenda a cobrar mais sem perder clientes.</p>
+        </div>
+        <div class="bg-white/10 p-8 rounded-xl shadow-lg hover:bg-white/20 hover:-translate-y-2 transition-all duration-300">
+          <h4 class="text-xl font-semibold mb-2">Processos</h4>
+          <p class="text-sm text-white/70">Saia do operacional e ganhe escala.</p>
+        </div>
+        <div class="bg-white/10 p-8 rounded-xl shadow-lg hover:bg-white/20 hover:-translate-y-2 transition-all duration-300">
+          <h4 class="text-xl font-semibold mb-2">Mentalidade</h4>
+          <p class="text-sm text-white/70">Pense e aja como uma empresária do futuro.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Galeria Storytelling -->
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h3 class="text-4xl font-bold mb-12">Um pouco da experiência</h3>
+
+      <!-- Story Block 1 -->
+      <div class="flex flex-col md:flex-row items-center gap-8 mb-16">
+        <div class="md:w-1/2">
+          <img src="images/2.jpg" alt="Conexões que Transformam" class="rounded-lg shadow-xl w-full object-cover max-w-md mx-auto">
+        </div>
+        <div class="md:w-1/2 text-left">
+          <h4 class="text-3xl font-bold mb-4">Conexões que Transformam</h4>
+          <p class="text-lg text-white/70">Cada encontro na imersão é uma oportunidade única de networking. Conecte-se com líderes do mercado imobiliário e expanda suas possibilidades.</p>
+        </div>
+      </div>
+
+      <!-- Story Block 2 -->
+      <div class="flex flex-col md:flex-row-reverse items-center gap-8 mb-16">
+        <div class="md:w-1/2">
+          <img src="images/3.jpg" alt="Aprendizado na Prática" class="rounded-lg shadow-xl w-full object-cover max-w-md mx-auto">
+        </div>
+        <div class="md:w-1/2 text-left">
+          <h4 class="text-3xl font-bold mb-4">Aprendizado na Prática</h4>
+          <p class="text-lg text-white/70">Nossas palestras e workshops são desenhados para oferecer conhecimento aplicável. Saia com estratégias claras para o seu negócio.</p>
+        </div>
+      </div>
+
+      <!-- Story Block 3 -->
+      <div class="flex flex-col md:flex-row items-center gap-8 mb-16">
+        <div class="md:w-1/2">
+          <img src="images/1.jpg" alt="Inspiração e Crescimento" class="rounded-lg shadow-xl w-full object-cover max-w-md mx-auto">
+        </div>
+        <div class="md:w-1/2 text-left">
+          <h4 class="text-3xl font-bold mb-4">Inspiração e Crescimento</h4>
+          <p class="text-lg text-white/70">Deixe-se inspirar por histórias de sucesso e descubra o seu potencial máximo. A Chave é o ponto de virada que você esperava.</p>
+        </div>
+      </div>
+
+      <!-- Story Block 4 -->
+      <div class="flex flex-col md:flex-row-reverse items-center gap-8 last:mb-0">
+        <div class="md:w-1/2">
+          <img src="images/4.jpg" alt="Visão de Futuro" class="rounded-lg shadow-xl w-full object-cover max-w-md mx-auto">
+        </div>
+        <div class="md:w-1/2 text-left">
+          <h4 class="text-3xl font-bold mb-4">Visão de Futuro</h4>
+          <p class="text-lg text-white/70">Explore as tendências e inovações que estão moldando o futuro do mercado imobiliário. Esteja à frente com a Chave.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Redlines / Scrolling Names -->
+  <section class="bg-white/5 py-4 overflow-hidden whitespace-nowrap border-y border-white/10">
+    <div class="animate-scroll inline-block">
+      <span class="text-white text-xl font-bold mx-8">NOME 1</span> <span class="text-purple-500 text-xl font-bold mx-8">✦</span>
+      <span class="text-white text-xl font-bold mx-8">NOME 2</span> <span class="text-purple-500 text-xl font-bold mx-8">✦</span>
+      <span class="text-white text-xl font-bold mx-8">NOME 3</span> <span class="text-purple-500 text-xl font-bold mx-8">✦</span>
+      <span class="text-white text-xl font-bold mx-8">NOME 4</span> <span class="text-purple-500 text-xl font-bold mx-8">✦</span>
+      <span class="text-white text-xl font-bold mx-8">NOME 5</span> <span class="text-purple-500 text-xl font-bold mx-8">✦</span>
+      <span class="text-white text-xl font-bold mx-8">NOME 6</span> <span class="text-purple-500 text-xl font-bold mx-8">✦</span>
+      <span class="text-white text-xl font-bold mx-8">NOME 7</span> <span class="text-purple-500 text-xl font-bold mx-8">✦</span>
+      <span class="text-white text-xl font-bold mx-8">NOME 8</span> <span class="text-purple-500 text-xl font-bold mx-8">✦</span>
+      <span class="text-white text-xl font-bold mx-8">NOME 9</span> <span class="text-purple-500 text-xl font-bold mx-8">✦</span>
+      <span class="text-white text-xl font-bold mx-8">NOME 10</span> <span class="text-purple-500 text-xl font-bold mx-8">✦</span>
+      <!-- Duplicate for seamless loop -->
+      <span class="text-white text-xl font-bold mx-8">NOME 1</span> <span class="text-purple-500 text-xl font-bold mx-8">✦</span>
+      <span class="text-white text-xl font-bold mx-8">NOME 2</span> <span class="text-purple-500 text-xl font-bold mx-8">✦</span>
+      <span class="text-white text-xl font-bold mx-8">NOME 3</span> <span class="text-purple-500 text-xl font-bold mx-8">✦</span>
+      <span class="text-white text-xl font-bold mx-8">NOME 4</span> <span class="text-purple-500 text-xl font-bold mx-8">✦</span>
+      <span class="text-white text-xl font-bold mx-8">NOME 5</span> <span class="text-purple-500 text-xl font-bold mx-8">✦</span>
+      <span class="text-white text-xl font-bold mx-8">NOME 6</span> <span class="text-purple-500 text-xl font-bold mx-8">✦</span>
+      <span class="text-white text-xl font-bold mx-8">NOME 7</span> <span class="text-purple-500 text-xl font-bold mx-8">✦</span>
+      <span class="text-white text-xl font-bold mx-8">NOME 8</span> <span class="text-purple-500 text-xl font-bold mx-8">✦</span>
+      <span class="text-white text-xl font-bold mx-8">NOME 9</span> <span class="text-purple-500 text-xl font-bold mx-8">✦</span>
+      <span class="text-white text-xl font-bold mx-8">NOME 10</span> <span class="text-purple-500 text-xl font-bold mx-8">✦</span>
+    </div>
+  </section>
+
+  <!-- Cronograma -->
+  <section class="bg-white/5 py-20">
+      <div class="max-w-4xl mx-auto px-6">
+          <h3 class="text-4xl font-bold mb-12 text-center">Cronograma do Dia</h3>
+          <div class="space-y-8 border-l-2 border-white/20 pl-8">
+              <div class="relative">
+                  <div class="absolute -left-10 h-5 w-5 bg-white rounded-full"></div>
+                  <p class="font-bold text-lg">09:00 - Credenciamento e Welcome Coffee</p>
+                  <p class="text-white/70">Oportunidade para networking e café da manhã.</p>
+              </div>
+              <div class="relative">
+                  <div class="absolute -left-10 h-5 w-5 bg-white rounded-full"></div>
+                  <p class="font-bold text-lg">10:00 - Palestra: Reposicionamento de Marca</p>
+                  <p class="text-white/70">Com Kaline Mousinho.</p>
+              </div>
+              <div class="relative">
+                  <div class="absolute -left-10 h-5 w-5 bg-white rounded-full"></div>
+                  <p class="font-bold text-lg">12:30 - Almoço</p>
+              </div>
+              <div class="relative">
+                  <div class="absolute -left-10 h-5 w-5 bg-white rounded-full"></div>
+                  <p class="font-bold text-lg">14:00 - Workshop: Precificação e Processos</p>
+                  <p class="text-white/70">Sessão prática para aplicar os conceitos.</p>
+              </div>
+              <div class="relative">
+                  <div class="absolute -left-10 h-5 w-5 bg-white rounded-full"></div>
+                  <p class="font-bold text-lg">18:00 - Encerramento e Happy Hour</p>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- Depoimentos -->
+  <section class="py-20">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <h3 class="text-4xl font-bold mb-12">Quem já participou, aprova</h3>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-white/10 p-8 rounded-xl shadow-lg text-left">
+          <p class="text-white/80 mb-4">"A imersão foi um divisor de águas na minha carreira. A Kaline entrega tudo e mais um pouco!"</p>
+          <p class="font-bold">- Joana Silva</p>
+          <p class="text-sm text-white/50">Corretora de Imóveis</p>
+        </div>
+        <div class="bg-white/10 p-8 rounded-xl shadow-lg text-left">
+          <p class="text-white/80 mb-4">"Nunca pensei que poderia cobrar mais e ter mais clientes. Aprendi a me posicionar de verdade."</p>
+          <p class="font-bold">- Carlos Andrade</p>
+          <p class="text-sm text-white/50">Dono de Imobiliária</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Investimento -->
+  <section id="investimento" class="bg-black py-20 text-center">
+    <h2 class="text-4xl font-bold mb-2">Garanta sua Chave</h2>
+    <p class="text-white/70 mb-12">Escolha o plano ideal para sua necessidade.</p>
+    <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-start">
+      
+      <!-- Chave Essencial -->
+      <div class="bg-white/5 p-8 rounded-2xl border border-white/10 shadow-lg flex flex-col h-full">
+        <h3 class="text-2xl font-bold mb-2">Chave Essencial</h3>
+        <p class="text-white/70 mb-6">Acesso completo à imersão.</p>
+        <div class="flex items-baseline gap-2 mb-6">
+          <p class="text-4xl font-bold">R$ 997</p>
+          <p class="text-xl line-through text-white/50">R$ 1497</p>
+        </div>
+        <ul class="space-y-3 text-left mb-8 flex-grow">
+          <li class="flex items-center gap-3"><span class="text-green-400">✓</span> Acesso aos 2 dias de evento</li>
+          <li class="flex items-center gap-3"><span class="text-green-400">✓</span> Material de apoio</li>
+          <li class="flex items-center gap-3"><span class="text-green-400">✓</span> Certificado de participação</li>
+        </ul>
+        <button class="w-full bg-white text-black font-bold py-3 rounded-xl shadow-2xl hover:bg-gray-300 hover:scale-105 transition-all duration-300 tracking-wide">
+            Garanta sua Chave 🔑
+          </button>
+      </div>
+
+      <!-- Chave Mestra -->
+      <div class="relative bg-white/10 p-8 rounded-2xl border-2 border-purple-500 shadow-2xl flex flex-col h-full">
+        <div class="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2">
+            <span class="bg-purple-500 text-white px-4 py-1 rounded-full text-sm font-bold">Mais Popular</span>
+        </div>
+        <h3 class="text-2xl font-bold mb-2 text-purple-400">Chave Mestra</h3>
+        <p class="text-white/70 mb-6">A experiência completa e exclusiva.</p>
+        <div class="flex items-baseline gap-2 mb-6">
+          <p class="text-4xl font-bold">R$ 1497</p>
+          <p class="text-xl line-through text-white/50">R$ 2997</p>
+        </div>
+        <ul class="space-y-3 text-left mb-8 flex-grow">
+          <li class="flex items-center gap-3"><span class="text-green-400">✓</span> Todos os benefícios da Chave Essencial</li>
+          <li class="flex items-center gap-3"><span class="text-green-400">✓</span> Acesso à área VIP</li>
+          <li class="flex items-center gap-3"><span class="text-green-400">✓</span> Jantar de networking exclusivo</li>
+          <li class="flex items-center gap-3"><span class="text-green-400">✓</span> Gravações do evento</li>
+        </ul>
+        <button class="w-full bg-purple-500 text-white font-bold py-3 rounded-xl shadow-2xl hover:bg-purple-600 hover:scale-105 transition-colors duration-300 tracking-wide">
+            Garantir Chave Mestra 👑
+          </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Sobre a criadora -->
+  <section class="bg-black py-20">
+    <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+      <div class="flex justify-center">
+        <img src="images/1.jpg" alt="Kaline Mousinho" class="w-80 h-80 object-cover rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-300">
+      </div>
+      <div class="text-center md:text-left">
+        <h3 class="text-4xl font-bold mb-4">Kaline Mousinho</h3>
+        <p class="text-white/70 text-lg mb-4">
+          Criadora de conteúdo digital, a corretora que virou marca. Transformo presença em ativo milionário. Empresária e criadora do Brandscape™.
+        </p>
+        <p class="text-sm text-white/50">
+          Brands: @azizgroup__ @eusouaziz @azizexperience
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="bg-white/5 py-20 max-w-4xl mx-auto px-6">
+    <h3 class="text-4xl font-bold mb-12 text-center">Perguntas Frequentes</h3>
+    <div class="space-y-4">
+      <details class="bg-white/10 p-5 rounded-xl shadow cursor-pointer">
+        <summary class="font-semibold text-lg">É ao vivo ou gravado?</summary>
+        <p class="mt-3 text-sm text-white/70">O evento será transmitido ao vivo, mas você terá acesso às gravações.</p>
+      </details>
+      <details class="bg-white/10 p-5 rounded-xl shadow cursor-pointer">
+        <summary class="font-semibold text-lg">Vai ter gravação?</summary>
+        <p class="mt-3 text-sm text-white/70">Sim! Você terá acesso por 12 meses.</p>
+      </details>
+      <details class="bg-white/10 p-5 rounded-xl shadow cursor-pointer">
+        <summary class="font-semibold text-lg">Preciso ter empresa aberta?</summary>
+        <p class="mt-3 text-sm text-white/70">Não. Serve tanto para iniciantes quanto para quem já empreende.</p>
+      </details>
+      <details class="bg-white/10 p-5 rounded-xl shadow cursor-pointer">
+        <summary class="font-semibold text-lg">Sou recém-formado, vale a pena?</summary>
+        <p class="mt-3 text-sm text-white/70">Sim, é a oportunidade de acelerar sua carreira no mercado imobiliário.</p>
+      </details>
+    </div>
+  </section>
+
+
+  <!-- Modal Formulário -->
+  <div id="modal-form" class="fixed inset-0 bg-black/70 flex items-center justify-center z-50 hidden">
+    <div class="bg-gradient-to-br from-purple-900 via-black to-purple-700 text-white rounded-2xl shadow-2xl p-8 max-w-md w-full relative border border-purple-500">
+      <button id="close-modal" class="absolute top-4 right-4 text-2xl text-purple-400 hover:text-white transition">&times;</button>
+      <h2 class="text-3xl font-extrabold mb-6 text-center tracking-wide">Quase lá! Complete sua inscrição</h2>
+      <form id="form-inscricao" class="space-y-6">
+        <div>
+          <label class="block mb-2 text-sm font-semibold text-purple-300" for="nome">Nome completo</label>
+          <input type="text" name="nome" id="nome" placeholder="Seu nome" required class="w-full px-4 py-3 rounded-lg border-none bg-white/10 text-white placeholder-purple-300 focus:outline-none focus:ring-2 focus:ring-purple-500 font-medium">
+        </div>
+        <div>
+          <label class="block mb-2 text-sm font-semibold text-purple-300" for="email">E-mail</label>
+          <input type="email" name="email" id="email" placeholder="Seu e-mail" required class="w-full px-4 py-3 rounded-lg border-none bg-white/10 text-white placeholder-purple-300 focus:outline-none focus:ring-2 focus:ring-purple-500 font-medium">
+        </div>
+        <div>
+          <label class="block mb-2 text-sm font-semibold text-purple-300" for="celular">Celular</label>
+          <input type="tel" name="celular" id="celular" placeholder="(99) 99999-9999" required class="w-full px-4 py-3 rounded-lg border-none bg-white/10 text-white placeholder-purple-300 focus:outline-none focus:ring-2 focus:ring-purple-500 font-medium">
+        </div>
+        <button type="submit" class="w-full bg-gradient-to-r from-purple-500 via-purple-700 to-purple-500 text-white font-extrabold py-4 rounded-xl shadow-xl hover:bg-purple-600 hover:scale-105 transition-all duration-300 tracking-wide text-lg">
+          Ir para o Checkout ➔
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-black py-10 text-center border-t border-white/10">
+    <p class="text-white/60">© 2025 A Chave — Criado por Kaline Mousinho</p>
+  </footer>
+
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/5511999999999" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-colors duration-300 flex items-center justify-center z-50">
+    <span class="text-2xl mr-2">💬</span>
+    <span class="font-bold hidden md:block">Fale Conosco</span>
+  </a>
+
+  <!-- Script do Timer e Modal -->
+  <script src="js/script.js"></script>
+  <script src="https://sdk.mercadopago.com/js/v2"></script>
+  <script>
+    // Abrir modal ao clicar nos botões
+    document.querySelectorAll('button').forEach(btn => {
+      if (btn.textContent.includes('Garanta sua Chave') || btn.textContent.includes('Garantir Chave Mestra')) {
+        btn.addEventListener('click', function(e) {
+          e.preventDefault();
+          document.getElementById('modal-form').classList.remove('hidden');
+        });
+      }
+    });
+    // Fechar modal
+    document.getElementById('close-modal').onclick = function() {
+      document.getElementById('modal-form').classList.add('hidden');
+    };
+    // Fechar ao clicar fora do modal
+    document.getElementById('modal-form').addEventListener('click', function(e) {
+      if (e.target === this) {
+        this.classList.add('hidden');
+      }
+    });
+    // Submissão do formulário
+    document.getElementById('form-inscricao').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const form = e.target;
+      const data = {
+        nome: form.nome.value,
+        email: form.email.value,
+        telefone: form.celular.value
+      };
+      
+    const publicKey = "APP_USR-c5ff41dc-a2ee-44a2-a506-f7c925c3090f";
+      
+    const res = await fetch('/api/v1/checkout', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify(data)
+      });
+
+      console.log(res);
+
+      const preferenceId = res.id;
+
+      const json = await res.json();
+      window.location.href = json.init_point;
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:15
+    container_name: achaveimersao_postgres
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: joaquim1993@
+      POSTGRES_DB: achave
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
