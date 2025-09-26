@@ -116,8 +116,6 @@ export const mercadopagoController = {
 
             const response = await preferencia.create({ body });
 
-            console.log(response);
-
             return res.status(200).json({ init_point: response.init_point });
                 } catch (error: unknown) {
                         // Prisma error para email ou telefone duplicado
